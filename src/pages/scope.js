@@ -1,10 +1,7 @@
 import * as React from "react";
-import { useState } from "react";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
-import { Typography, Grid, Button, TextareaAutosize } from "@mui/material";
-import TextField from "@mui/material/TextField";
-import DoubleArrowIcon from "@mui/icons-material/DoubleArrow";
+import { Typography, Grid } from "@mui/material";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
 import TableCell from "@mui/material/TableCell";
@@ -18,14 +15,13 @@ function createData(label, vickey, customer) {
 }
 
 const rows = [
-	createData("By", "vickey goup", "lorem ipsum"),
-	createData("Name", "Jane Doe", "Doe Jane"),
-	createData("Title", "CEO", "Founder"),
-	createData("Date", "11/12/21", "1/1/1"),
+	createData("By", "VICKEY", ""),
+	createData("Name", "Sharbel Safyi", ""),
+	createData("Title", "CEO", ""),
+	createData("Date", "", ""),
 ];
 
 export default function Scope() {
-	const [value, setValue] = useState(null);
 
 	return (
 		<Box
@@ -294,7 +290,7 @@ export default function Scope() {
 						<Table sx={{ width: "100%" }} aria-label='simple table'>
 							<TableHead>
 								<TableRow>
-									<TableCell>Label</TableCell>
+									<TableCell></TableCell>
 									<TableCell align='left'>VICKEY GROUP MEMBER</TableCell>
 									<TableCell align='left'>CUSTOMER</TableCell>
 								</TableRow>
