@@ -5,6 +5,7 @@ import { createTheme } from "./themes";
 import { SettingsConsumer, SettingsProvider } from "./context/settings-context";
 import Scope from "./pages/scope";
 import Agreement from "./pages/agreement";
+import ConsultantEmployee from "./pages/consultant-employee";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
 							<Routes>
 								<Route exact path='/scope' element={<Scope />} />
 								<Route exact path='/agreement' element={<Agreement />} />
+								<Route exact path='/consultant-employee' element={<ConsultantEmployee />} />
 							</Routes>
 						</Router>
 					</ThemeProvider>
